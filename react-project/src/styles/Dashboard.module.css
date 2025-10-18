@@ -1,0 +1,130 @@
+.dashboardContainer {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin: 30px auto;
+  max-width: 900px;
+  text-align: right;
+  direction: rtl;
+}
+
+.dashboardContainer h1 {
+  color: #008000;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+}
+
+.dashboardContainer p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.addProductSection, .productsSection {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.addProductSection h3, .productsSection h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.addProductForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="number"] {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formGroup input:focus {
+  border-color: #008000;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2);
+}
+
+.submitButton {
+  background-color: #008000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start; /* Align button to the right in RTL */
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #006400;
+}
+
+.submitButton:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.errorText {
+  color: #d9534f;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.productList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.productItem {
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .dashboardContainer {
+    margin: 20px;
+    padding: 20px;
+  }
+  .dashboardContainer h1 {
+    font-size: 2rem;
+  }
+  .addProductForm {
+    max-width: 100%;
+  }
+}
